@@ -13,7 +13,7 @@ public class HW7TaskFMain {
 //        String ruleValue = "silver";
 
         String[][] items = {{"phone","blue","pixel"},{"computer","silver","phone"},{"phone","gold","iphone"}};
-        String ruleKey = "typez";
+        String ruleKey = "type";
         String ruleValue = "phone";
 
         int ruleKeyInt = 0;
