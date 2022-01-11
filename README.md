@@ -115,3 +115,61 @@
 - 2 <= n <= 100
 - 1 <= candies[i] <= 100
 - 1 <= extraCandies <= 50
+
+## ✅ Task F, Count Items Matching a Rule
+### Condition:
+- You are given an array items, where each items[i] = [typei, colori, namei] describes the type, color, and name of the ith item. You are also given a rule represented by two strings, ruleKey and ruleValue.
+- The ith item is said to match the rule if one of the following is true:
+- ruleKey == "type" and ruleValue == typei.
+- ruleKey == "color" and ruleValue == colori.
+- ruleKey == "name" and ruleValue == namei.
+- Return the number of items that match the given rule. 
+
+### Example 1:
+- Input: items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]], ruleKey = "color", ruleValue = "silver"
+- Output: 1
+- Explanation: There is only one item matching the given rule, which is ["computer","silver","lenovo"].
+
+### Example 2:
+- Input: items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]], ruleKey = "type", ruleValue = "phone"
+- Output: 2
+- Explanation: There are only two items matching the given rule, which are ["phone","blue","pixel"] and ["phone","gold","iphone"]. 
+- - Note that the item ["computer","silver","phone"] does not match.
+ 
+### Constraints:
+- 1 <= items.length <= 104
+- 1 <= typei.length, colori.length, namei.length, ruleValue.length <= 10
+- ruleKey is equal to either "type", "color", or "name".
+- All strings consist only of lowercase letters.
+
+## ✅ Task G, Truncate Sentence
+### Condition:
+- A sentence is a list of words that are separated by a single space with no leading or trailing spaces. Each of the words consists of only uppercase and lowercase English letters (no punctuation).
+- For example, "Hello World", "HELLO", and "hello world hello world" are all sentences.
+- You are given a sentence s and an integer k. You want to truncate s such that it contains only the first k words. Return s after truncating it.
+
+### Example 1:
+- Input: s = "Hello how are you Contestant", k = 4
+- Output: "Hello how are you"
+- Explanation:
+- The words in s are ["Hello", "how" "are", "you", "Contestant"].
+- The first 4 words are ["Hello", "how", "are", "you"].
+- Hence, you should return "Hello how are you".
+
+### Example 2:
+- Input: s = "What is the solution to this problem", k = 4
+- Output: "What is the solution"
+- Explanation: The words in s are ["What", "is" "the", "solution", "to", "this", "problem"].
+- The first 4 words are ["What", "is", "the", "solution"].
+- Hence, you should return "What is the solution".
+
+### Example 3:
+- Input: s = "chopper is not a tanuki", k = 5
+- Output: "chopper is not a tanuki"
+ 
+### Constraints:
+- 1 <= s.length <= 500
+- k is in the range [1, the number of words in s].
+- s consist of only lowercase and uppercase English letters and spaces.
+- The words in s are separated by a single space.
+- There are no leading or trailing spaces.
